@@ -26,7 +26,9 @@ import * as pageContent from "./pageContent.js";
     aboutBtn.id="aboutBtn";
     nav.appendChild(aboutBtn);
 
-pageContent.loadHome();
+//  pageContent.loadHome();
+ pageContent.loadMenu();
+pageContent.loadFooter();
 
     
 

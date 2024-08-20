@@ -1,6 +1,8 @@
 
 body{
     margin: 0;
+    background-color: #ebd3f86f;
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     margin: 0;
@@ -8,6 +10,8 @@ header{
     display: flex;
     background-color:  #2E073F;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 nav{
     display: flex;
@@ -34,10 +38,139 @@ nav input:hover{
     transition: background-color 0.6s;
     box-shadow: 0 0 5px #3c0c51;
     border-radius: 10px;
- 
+}
 
 
 
+.home-wrapper{
+    display: grid;
+    grid-template-rows:  600px 1fr 1fr;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px; /* Adjust spacing between items */
+    padding: 32px; /* Add padding around the grid */
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the grid area while maintaining its aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for a bento effect */
+    transition: transform 0.3s ease; /* Optional: Adds a smooth scaling effect on hover */
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05); /* Slightly scales up the image on hover */
+  }
+  
+.text-div{
+    
+    display: flex;
+margin: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    position:absolute;
+}
+.reserva-btn{
    
+    width: 200px;
+    border: none;
+    background-color: #3c0c51;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.6s;
+}
+
+.reserva-btn:hover{
+    background-color: #2e073fb0;
+    cursor: pointer;    
+    transition: background-color 0.6s;
+   
+}
+.img-text{
+
+color: white;
+padding: 20px;
+font-size: 42px;
+width: 100%;
+text-align: center;
+
+}
+.img-container{
+    display: flex;
+    position: relative;
+}
+
+.restaurant-img{
+width: 100%;
+
+}
+
+.text-content {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 90%; /* Limit the width of the content */
+    background-color: #EBD3F8; /* Light background for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .text-content h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #2E073F; /* Example primary color */
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #333; /* Dark text for readability */
+  }
+
+main{
+    
+    height: 100vh;
+}
+
+  .menu-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    height: 100%;
+    background-color: #2e073fb0;
+    color: white;
+   
+
+    
+
+  }
+  .menu-heading{
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: #2E073F 2px solid;
+    border-width: 80%;
+    height: 100%;
+    font-weight: 700;
+  }
+
+
+footer{
+background-color: #7A1CAC;
+height: 80px;
+color: white;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
